@@ -1,12 +1,12 @@
 /**
- * 检查给定的值是否为undefined。
+ * 检查给定的值是否为 undefined。
  * @param {*} val 要检查的值
- * @returns {boolean} 如果值是undefined, 则返回 true; 否则返回 false
+ * @returns {boolean} 如果值是 undefined, 则返回 true; 否则返回 false
  */
 export const isUndefined = (val: any) => typeof val === 'undefined';
 
 /**
- * 检查给定的值是否为null。
+ * 检查给定的值是否为 null。
  * @param {*} val 要检查的值
  * @returns {boolean} 如果值是null, 则返回 true; 否则返回 false
  */
@@ -52,7 +52,7 @@ export const isBigInt = (val: any) => typeof val === 'bigint';
  * @param {*} val 要检查的值
  * @returns {boolean} 如果值是对象类型, 则返回 true; 否则返回 false
  */
-export const isObject = (val: any) => typeof val === 'boolean';
+export const isObject = (val: any) => Object.prototype.toString.call(val) === '[object Object]';
 
 /**
  * 检查给定的值是否为数组。
