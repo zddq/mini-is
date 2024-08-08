@@ -1,0 +1,5 @@
+# 对提交的文件执行 lint-staged 相关操作
+
+npx lint-staged
+
+npm run test
