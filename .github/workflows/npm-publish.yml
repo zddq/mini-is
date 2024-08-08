@@ -1,0 +1,11 @@
+# action 名称
+name: Node.js Npm Publish
+
+# 当代码合并到master分支的时候, 执行下列脚本
+on:
+  push:
+    branches:
+      - main
+
+# 任务
+jobs:

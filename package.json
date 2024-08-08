@@ -22,8 +22,8 @@
     "email": "minimalism_zddq@163.com",
     "url": "https://github.com/zddq/mini-is/#README"
   },
-  "contributors": [],
-  "funding": [],
+  "contributors": [ ],
+  "funding": [ ],
   "files": [
     "dist/*"
   ],
@@ -36,9 +36,9 @@
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "test": "jest --coverage",
-    "release:major": "standard-version --release-as major",
-    "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch"
+    "version:major": "npm version major",
+    "version:minor": "npm version minor",
+    "version:patch": "npm version patch"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -54,7 +54,6 @@
     "prettier": "^3.3.3",
     "rollup": "^4.20.0",
     "rollup-plugin-delete": "^2.0.0",
-    "standard-version": "^9.5.0",
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.3",
