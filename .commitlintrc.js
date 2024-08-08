@@ -5,6 +5,7 @@ export default {
     alias: { fd: "docs: fix typos" },
     messages: {
       type: "选择要提交的更改类型:",
+      scope: "影响范围:",
       subject: "写一个简短的命令式时态描述的变化:",
     },
     types: [
