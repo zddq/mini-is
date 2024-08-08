@@ -1,0 +1,25 @@
+{
+	"name": "mini-is",
+	"version": "1.0.0",
+	"description": "小而美的判断类型方法库",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"build": "rollup -c rollup.config.js"
+	},
+	"keywords": [
+		"mini",
+		"is",
+		"mini-js",
+		"is-mini",
+		"is-mini-js"
+	],
+	"author": "DEVELOPER",
+	"license": "MIT",
+	"devDependencies": {
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-json": "^6.1.0",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"rollup": "^4.20.0"
+	}
+}
