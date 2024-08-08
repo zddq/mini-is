@@ -1,6 +1,6 @@
 {
   "name": "mini-is",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Small and Beautiful JS Type Judgment Method Library - 小而美的 JS 类型判断方法库",
   "keywords": [
     "mini-is",
@@ -22,8 +22,8 @@
     "email": "minimalism_zddq@163.com",
     "url": "https://github.com/zddq/mini-is/#README"
   },
-  "contributors": [ ],
-  "funding": [ ],
+  "contributors": [],
+  "funding": [],
   "files": [
     "dist/*"
   ],
@@ -35,7 +35,10 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -51,6 +54,7 @@
     "prettier": "^3.3.3",
     "rollup": "^4.20.0",
     "rollup-plugin-delete": "^2.0.0",
+    "standard-version": "^9.5.0",
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "tslib": "^2.6.3",
