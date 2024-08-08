@@ -2,11 +2,19 @@
   "name": "mini-is",
   "version": "1.0.0",
   "description": "Small and Beautiful JS Type Judgment Method Library",
-  "keywords": [ "mini-is", "mini", "is" ],
+  "keywords": [
+    "mini-is",
+    "mini",
+    "is"
+  ],
   "homepage": "https://github.com/zddq/mini-is/#README",
   "bugs": {
     "url": "https://github.com/zddq/mini-is/issues",
     "email": "minimalism_zddq@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zddq/mini-is.git"
   },
   "license": "MIT",
   "author": {
@@ -14,8 +22,8 @@
     "email": "minimalism_zddq@163.com",
     "url": "https://github.com/zddq/mini-is/#README"
   },
-  "contributors": [ ],
-  "funding": [ ],
+  "contributors": [],
+  "funding": [],
   "files": [
     "dist/*"
   ],
@@ -23,14 +31,10 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zddq/mini-is.git"
-  },
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js"
   },
-  "dependencies": { },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.3",
@@ -39,6 +43,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
+    "prettier": "^3.3.3",
     "rollup": "^4.20.0",
     "rollup-plugin-delete": "^2.0.0",
     "tslib": "^2.6.3",

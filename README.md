@@ -13,20 +13,23 @@ pnpm i mini-is
 # yarn
 yarn add mini-is
 
-#npm
+# npm
 npm i mini-is
+
+# bun
+bun install mini-is
 ```
 
 ## Usage
 
 ```js
 // ESM xxx.js
-import { isString } from "mini-is";
-console.log(isString("hello"));
+import { isString } from 'mini-is';
+console.log(isString('hello'));
 
 // CJS xxx.js
-const { isString } = require("mini-is");
-console.log(isString("hello"));
+const { isString } = require('mini-is');
+console.log(isString('hello'));
 ```
 
 ## License
