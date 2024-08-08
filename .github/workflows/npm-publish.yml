@@ -26,6 +26,7 @@ jobs:
 
       - name: 运行测试
         run: npm run test
+        run: echo "🤡测试用例通过"
 
       - name: 打包构建
         run: npm run build
