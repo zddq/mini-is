@@ -1,19 +1,29 @@
-import json from "@rollup/plugin-json";
+import del from "rollup-plugin-delete";
+import typescript from "@rollup/plugin-typescript";
 import nodeResolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import json from "@rollup/plugin-json";
 import { babel } from "@rollup/plugin-babel";
 
 /**
  * @type {import('rollup').RollupOptions}
  */
 export default {
-	input: "src/main.js",
+	input: "src/index.ts",
 	output: [
-		{ banner: "/*! common.banner */", format: "es", file: "dist/index.es.js" },
-		{ banner: "/*! common.banner */", format: "cjs", file: "dist/index.cjs.js" },
-		{ banner: "/*! common.banner */", format: "amd", file: "dist/index.amd.js" },
-		{ banner: "/*! common.banner */", format: "umd", file: "dist/index.umd.js", name: "clone" },
-		{ banner: "/*! common.banner */", format: "iife", file: "dist/index.iife.js", name: "clone" },
-		{ banner: "/*! common.banner */", format: "system", file: "dist/index.system.js" },
+		{ format: "esm", file: "dist/index.esm.js" },
+		{ format: "cjs", file: "dist/index.cjs.js" },
+		{ format: "umd", file: "dist/index.umd.js", name: "miniIsLib" },
 	],
-	plugins: [json(), nodeResolve(), babel({ browserslistConfigFile: true })],
+	plugins: [
+		del({ targets: ["dist/*"] }),
+		typescript(),
+		nodeResolve(),
+		commonjs(),
+		json(),
+		babel({
+			babelHelpers: "bundled",
+			browserslistConfigFile: true,
+		}),
+	],
 };

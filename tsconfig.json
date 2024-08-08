@@ -1,0 +1,53 @@
+{
+	"compilerOptions": {
+		// Type Checking
+		"strict": true,
+		"alwaysStrict": false,
+		"noImplicitAny": true,
+		"allowUnreachableCode": false,
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictPropertyInitialization": true,
+
+		// Modules
+		"module": "ES6",
+		"moduleResolution": "Bundler",
+		"baseUrl": ".",
+
+		// Emit
+		"declaration": true,
+		"declarationDir": "./types",
+		"declarationMap": false,
+		"sourceMap": false,
+		"noEmitOnError": true,
+		"removeComments": false,
+		"emitDeclarationOnly": true,
+
+		// JavaScript Support
+		"allowJs": true,
+		"checkJs": true,
+		"maxNodeModuleJsDepth": 0,
+
+		// Editor Support
+		// Interop Constraints
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+
+		// Backwards Compatibility
+		// Language and Environment
+		"target": "ES6"
+
+		// Compiler Diagnostics
+		// Projects
+		// Output Formatting
+		// Completeness
+		// Command Line
+		// Watch Options
+	},
+	"include": [ "src/**/*" ],
+	"exclude": [ "node_modules", "dist" ]
+}

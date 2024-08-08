@@ -1,25 +1,47 @@
 {
-	"name": "mini-is",
-	"version": "1.0.0",
-	"description": "小而美的判断类型方法库",
-	"type": "module",
-	"main": "index.js",
-	"scripts": {
-		"build": "rollup -c rollup.config.js"
-	},
-	"keywords": [
-		"mini",
-		"is",
-		"mini-js",
-		"is-mini",
-		"is-mini-js"
-	],
-	"author": "DEVELOPER",
-	"license": "MIT",
-	"devDependencies": {
-		"@rollup/plugin-babel": "^6.0.4",
-		"@rollup/plugin-json": "^6.1.0",
-		"@rollup/plugin-node-resolve": "^15.2.3",
-		"rollup": "^4.20.0"
-	}
+  "name": "mini-is",
+  "version": "1.0.0",
+  "description": "Small and Beautiful JS Type Judgment Method Library",
+  "keywords": [ "mini-is", "mini", "is" ],
+  "homepage": "https://github.com/zddq/mini-is/#README",
+  "bugs": {
+    "url": "https://github.com/zddq/mini-is/issues",
+    "email": "minimalism_zddq@163.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ZDDQ",
+    "email": "minimalism_zddq@163.com",
+    "url": "https://github.com/zddq/mini-is/#README"
+  },
+  "contributors": [ ],
+  "funding": [ ],
+  "files": [
+    "dist/*"
+  ],
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zddq/mini-is.git"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "dependencies": { },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.20.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
+  }
 }
