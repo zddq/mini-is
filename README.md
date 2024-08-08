@@ -1,7 +1,5 @@
 # mini-is
 
-## About
-
 Small and Beautiful JS Type Judgment Method Library
 
 ## Installation
@@ -30,6 +28,9 @@ console.log(isString('hello'));
 // CJS xxx.js
 const { isString } = require('mini-is');
 console.log(isString('hello'));
+
+// UMD xxx.html
+<script src="https://unpkg.com/mini-is@x.x.x"></script>;
 ```
 
 ## License

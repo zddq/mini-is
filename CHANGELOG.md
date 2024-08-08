@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1-alpha] - 2024-08-08
+
+### Added
+
+- 完善 LICENSE 文件
+- 新增 CHANGELOG.md 文件
+- 新增 .editorconfig 文件, 确保多个开发人员保持一致的编码样式
+
 ## [1.0.0] - 2024-08-08
 
 ### Added
