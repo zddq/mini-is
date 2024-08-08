@@ -1,6 +1,6 @@
 # mini-is
 
-Small and Beautiful JS Type Judgment Method Library
+Small and Beautiful JS Type Judgment Method Library - 小而美的 JS 类型判断方法库
 
 ## Installation
 
