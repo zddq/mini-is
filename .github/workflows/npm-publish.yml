@@ -15,20 +15,27 @@ jobs:
       - name: 检查 main 分支
         uses: actions/checkout@v4
 
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@4
+        with:
+          version: 9
+          run_install: false
+
       - name: 设置 node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
+          cache: "pnpm"
 
       - name: 安装依赖
-        run: npm install
+        run: pnpm install
 
       - name: 运行测试
-        run: npm run test
+        run: pnpm run test
 
       - name: 打包构建
-        run: npm run build
+        run: pnpm run build
 
       - name: 发布NPM包
         env:
@@ -36,7 +43,7 @@ jobs:
         run: npm publish
 
       - name: publish 成功通知
-        run: echo npm 推送重构
+        run: echo pnpm 推送重构
 
       - name: 读取当前版本号
         id: version
